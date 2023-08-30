@@ -4,5 +4,7 @@ return {
 	Server_isfriendlocked = false,
 	Server_isagelocked = false,
 		
-	Is_offlisting = true
+	Is_offlisting = true,
+
+	Age_interval = 30
 }
