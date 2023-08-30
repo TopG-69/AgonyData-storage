@@ -1,1 +1,8 @@
-
+return {
+	Server_islocked = false
+	Server_ispremiumlocked = false
+	Server_isfriendlocked = false
+	Server_isagelocked = false
+		
+	Is_offlisting = true
+}
