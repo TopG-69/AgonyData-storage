@@ -1,10 +1,10 @@
 return {
-	Server_islocked = false,
-	Server_ispremiumlocked = false,
-	Server_isfriendlocked = false,
-	Server_isagelocked = false,
+	locked = false,
+	premiumlocked = false,
+	friendlocked = false,
+	locked = false,
 		
-	Is_offlisting = true,
+	offlisting = true,
 
-	Age_interval = 30
+	ageinterval = 30
 }
