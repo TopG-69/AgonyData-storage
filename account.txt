@@ -1,4 +1,4 @@
 return {
   Name = LocalPlayer.Name,
-  Password = ""
+  Password = PremiumKey
 }
