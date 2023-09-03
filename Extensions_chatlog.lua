@@ -121,6 +121,7 @@ pcall(function()
     ChatL_Name.BorderSizePixel = 0
     ChatL_Name.Size = UDim2.new(0, -90, 0, ChatL_Frame.Size.Y.Offset)
     ChatL_Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+    ChatL_Name.TextXAlignment = "Left"
     ChatL_Name.TextSize = 20
     ChatL_Name.Visible = false
     ChatL_Name.TextScaled = true
