@@ -185,6 +185,15 @@ pcall(function()
         ImageButton_group.ImageColor3 = Color3.fromRGB(120, 120, 255)
         ImageButton_global.ImageColor3 = Color3.fromRGB(120, 120, 255)
     end)
+    ImageButton_clear.MouseButton1Click:Connect(function()
+        for i, v in pairs(ScrollingFrame:GetChildren()) do
+            if v.Name ~= "ChatL_Frame" then
+                v:Destroy()
+            end
+        end
+    end)
+    ImageButton_save.MouseButton1Click:Connect(function()
+    end)
     ImageButton_close.MouseButton1Click:Connect(function()
         Frame.Visible = false
         Frame.Active = false
