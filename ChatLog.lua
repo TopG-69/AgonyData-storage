@@ -132,8 +132,6 @@ pcall(function()
         Frame.Selectable = Boolean
     end
 
-    Display_ChatL(true)
-
     Create_ChatLNote = function(Text, Text2, ShouldLog)
         if not table.find(LogType, ShouldLog) then return end
 
