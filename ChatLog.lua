@@ -1,4 +1,5 @@
 pcall(function()
+    local LogType = {"Group", "Global"}
     local Chatlog_GUI = Instance.new("ScreenGui")
     Chatlog_GUI.Name = "Agony_Extensions-CHATLOG"
     Chatlog_GUI.Parent = game:GetService("CoreGui")
@@ -66,7 +67,7 @@ pcall(function()
     ImageButton_group.BackgroundTransparency = 1
     ImageButton_group.BorderSizePixel = 0
     ImageButton_group.Image = "rbxassetid://12899886897"
-    ImageButton_group.ImageColor3 = Color3.fromRGB(120, 120, 255)
+    ImageButton_group.ImageColor3 = Color3.fromRGB(190, 190, 255)
     ImageButton_group.Parent = Frame
 
     local ImageButton_none = Instance.new("ImageButton")
@@ -75,7 +76,7 @@ pcall(function()
     ImageButton_none.BackgroundTransparency = 1
     ImageButton_none.BorderSizePixel = 0
     ImageButton_none.Image = "rbxassetid://14672679300"
-    ImageButton_none.ImageColor3 = Color3.fromRGB(120, 120, 255)
+    ImageButton_none.ImageColor3 = Color3.fromRGB(70, 70, 200)
     ImageButton_none.Parent = Frame
 
     local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -131,7 +132,11 @@ pcall(function()
         Frame.Selectable = Boolean
     end
 
-    Create_ChatLNote = function(Text, Text2)
+    Display_ChatL(true)
+
+    Create_ChatLNote = function(Text, Text2, ShouldLog)
+        if not table.find(LogType, ShouldLog) then return end
+
         for i, v in pairs(ScrollingFrame:GetChildren()) do if (v ~= ChatL_Label and v ~= ChatL_Name) then
             v.Position = UDim2.new(0, 90, 0, 20*(#ScrollingFrame:GetChildren()-((i)-1)))
         end end
@@ -158,6 +163,30 @@ pcall(function()
         end)
     end
 
+    ImageButton_group.MouseButton1Click:Connect(function()
+        if ImageButton_group.ImageColor3 == Color3.fromRGB(190, 190, 255) then
+            for i, v in pairs(LogType) do v.Name == "Group" then table.remove(LogType, i) break end
+            ImageButton_group.ImageColor3 = Color3.fromRGB(120, 120, 255)
+        else
+            table.insert(LogType, "Group")
+            ImageButton_group.ImageColor3 = Color3.fromRGB(190, 190, 255)
+        end
+    end)
+    ImageButton_global.MouseButton1Click:Connect(function()
+        if ImageButton_global.ImageColor3 == Color3.fromRGB(190, 190, 255) then
+            for i, v in pairs(LogType) do v.Name == "Global" then table.remove(LogType, i) break end
+            for i, v in pairs(LogType) do table.remove(LogType, i) end
+            ImageButton_global.ImageColor3 = Color3.fromRGB(120, 120, 255)
+        else
+            table.insert(LogType, "Global")
+            ImageButton_global.ImageColor3 = Color3.fromRGB(190, 190, 255)
+        end
+    end)
+    ImageButton_none.MouseButton1Click:Connect(function()
+        for i, v in pairs(LogType) do table.remove(LogType, i) end
+        ImageButton_group.ImageColor3 = Color3.fromRGB(120, 120, 255)
+        ImageButton_global.ImageColor3 = Color3.fromRGB(120, 120, 255)
+    end)
     ImageButton_close.MouseButton1Click:Connect(function()
         Frame.Visible = false
         Frame.Active = false
