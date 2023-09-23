@@ -56,7 +56,7 @@ Obfuscation_text = {
     Z = {'Zhggz', 'MjdfX', 'MkldN', 'sPwNk', 'jHrXk', 'mWwNu', 'nMwFw', 'wZrPt', 'zNqHk', 'qKwXp', 'pGvTo', 'sMxHu', 'jFkZq', 'yGqHo', 'oQjZs'}
 }
 
-Random = function()
+local Random = function()
 	local RMath_Maxin = nil
 
 	local R_num1 = math.random(1, 10) R_num2 = math.random(1, 10)
@@ -70,7 +70,7 @@ Random = function()
 	return RMath_Maxin
 end
 
-function ShuffleArray(Array)
+local ShuffleArray = function(Array)
     for i = #Array, 2, -1 do
         local j = math.random(i)
         Array[i], Array[j] = Array[j], Array[i]
