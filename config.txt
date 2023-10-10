@@ -3,7 +3,7 @@ return {
 	premiumlocked = false,
 	friendlocked = false,
 	agelocked = false,
-	friendlocked = false,
+	grouplocked = false,
 		
 	offlisting = true,
 
