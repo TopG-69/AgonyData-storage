@@ -1,0 +1,9 @@
+CodePid == 1
+
+pcall(function()
+	CreateTab("Template", "Custom", 12899885269, {60, 60, 255}, function() Tabs("X") end)
+  CreateModule("Template", 1, "X")
+	CreateButton("Template", "Kick LocalPlayer", function(Value)
+		LocalPlayer:Kick()
+	end)
+end)
