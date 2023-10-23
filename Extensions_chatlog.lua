@@ -149,7 +149,7 @@ pcall(function()
         local Name = ChatL_Name:Clone()
         Name.Visible = true
         Name.Parent = Label
-        Name.TextColor3 = Color3.fromRGB(math.random(60, 255), math.random(60, 255), math.random(60, 255))
+        Name.TextColor3 = Color3.fromRGB(math.random(60, 200), math.random(60, 200), math.random(60, 200))
         Name.Position = UDim2.new(0, 0, 0, 0)
         Name.Text = Text2
 
@@ -160,6 +160,7 @@ pcall(function()
                 end
             end
         end)
+        for i, v in pairs(Label:GetChildren()) do if v.TextColor3 = Color3.fromRGB(255, 255, 255) then v:Destroy() end end
     end
 
     ImageButton_group.MouseButton1Click:Connect(function()
@@ -197,7 +198,7 @@ pcall(function()
         local ChatLogData = {}
         
         for _, Child in pairs(ScrollingFrame:GetChildren()) do
-            if Child.Name == "ChatLog_Frame" then
+            if Child.Name ~= "ChatLog_Frame" then
                 local Message = Child.Text
                 local Name = Child.ChatLog_Name.Text
                 local Final = (Name .. ": " .. Message)
