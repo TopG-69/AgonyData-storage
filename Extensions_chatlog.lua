@@ -194,6 +194,20 @@ pcall(function()
         end
     end)
     ImageButton_save.MouseButton1Click:Connect(function()
+        local ChatLogData = {}
+        
+        for _, Child in pairs(ScrollingFrame:GetChildren()) do
+            if Child.Name == "ChatLog_Frame" then
+                local Message = Child.Text
+                local Name = Child.ChatLog_Name.Text
+                local Final = (Name .. ": " .. Message)
+                table.insert(ChatLogData, Final)
+            end
+        end
+    
+        local NewChatLogData = table.concat(ChatLogData, "\n")
+        makefolder("Agony/Apoc/ChatLogs") task.wait(0.1)
+        writefile("Agony/Apoc/ChatLogs/" .. tostring(os.date("%H:%M:%S", os.time())), NewChatLogData)
     end)
     ImageButton_close.MouseButton1Click:Connect(function()
         Frame.Visible = false
