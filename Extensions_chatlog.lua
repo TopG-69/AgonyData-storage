@@ -150,6 +150,7 @@ pcall(function()
             end
         end)
     end
+
     ImageButton_group.MouseButton1Click:Connect(function()
         if ImageButton_group.ImageColor3 == Color3.fromRGB(190, 190, 255) then
             for i, v in pairs(LogType) do if v.Name == "Group" then table.remove(LogType, i) break end end
