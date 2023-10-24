@@ -9,9 +9,9 @@ pcall(function()
     D_Frame.Size = UDim2.new(0, 500, 0, 260)
     D_Frame.Position = UDim2.new(0.5, -250, 0.1, 0)
     D_Frame.BackgroundTransparency = 1
-    D_Frame.Draggable = true
-    D_Frame.Active = true
-    D_Frame.Selectable = true
+    D_Frame.Draggable = false
+    D_Frame.Active = false
+    D_Frame.Selectable = false
     D_Frame.Parent = Chatlog_GUI
 
     local Frame = Instance.new("Frame")
@@ -123,6 +123,10 @@ pcall(function()
         Frame.Visible = Boolean
         Frame.Active = Boolean
         Frame.Selectable = Boolean
+
+        D_Frame.Visible = Boolean
+        D_Frame.Active = Boolean
+        D_Frame.Selectable = Boolean
     end
 
     Create_ChatLNote = function(Text, Text2, ShouldLog)
