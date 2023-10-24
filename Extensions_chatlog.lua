@@ -203,7 +203,19 @@ pcall(function()
                 table.insert(ChatLogData, Final)
             end
         end
-    
+        --[[
+            angiounjgaw
+                fdhdshfds
+                dsrhrdhdrh
+                fsdhdshfdshs
+                drshsdhsdhrd
+                sshd
+                hsrd
+                h
+                dshsd
+                hdshdshsdhdsh
+                sdrhdhd
+            --]]
         local NewChatLogData = table.concat(ChatLogData, "\n")
         makefolder("Agony/Apoc/ChatLogs") task.wait(0.1)
         writefile("Agony/Apoc/ChatLogs/" .. tostring(os.time()) .. ".txt", NewChatLogData)
