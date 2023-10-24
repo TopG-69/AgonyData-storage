@@ -81,7 +81,6 @@ pcall(function()
     ScrollingFrame.ScrollBarThickness = 5
     ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
     ScrollingFrame.Parent = Frame
-
     --( Function Assets
     local ChatL_Frame = Instance.new("Frame")
     ChatL_Frame.Name = "ChatLog_Frame"
@@ -117,7 +116,6 @@ pcall(function()
     ChatL_Name.TextScaled = true
     ChatL_Name.Parent = ChatL_Label
     --)
-
     Display_ChatL = function(Boolean)
         Frame.Visible = Boolean
         Frame.Active = Boolean
