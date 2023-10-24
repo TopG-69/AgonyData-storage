@@ -160,7 +160,7 @@ pcall(function()
                 end
             end
         end)
-        for i, v in pairs(Label:GetChildren()) do if v.TextColor3 = Color3.fromRGB(255, 255, 255) then v:Destroy() end end
+        for i, v in pairs(Label:GetChildren()) do if v.TextColor3 == Color3.fromRGB(255, 255, 255) then v:Destroy() end end
     end
 
     ImageButton_group.MouseButton1Click:Connect(function()
