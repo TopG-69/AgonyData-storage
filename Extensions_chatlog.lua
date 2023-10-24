@@ -160,7 +160,6 @@ pcall(function()
                 end
             end
         end)
-        for i, v in pairs(Label:GetChildren()) do if v.TextColor3 == Color3.fromRGB(255, 255, 255) then v:Destroy() end end
     end
     ImageButton_group.MouseButton1Click:Connect(function()
         if ImageButton_group.ImageColor3 == Color3.fromRGB(190, 190, 255) then
@@ -207,7 +206,7 @@ pcall(function()
     
         local NewChatLogData = table.concat(ChatLogData, "\n")
         makefolder("Agony/Apoc/ChatLogs") task.wait(0.1)
-        writefile("Agony/Apoc/ChatLogs/" .. tostring(os.date("%H:%M:%S", os.time())), NewChatLogData)
+        writefile("Agony/Apoc/ChatLogs/" .. tostring(os.time()) .. ".txt", NewChatLogData)
     end)
     ImageButton_close.MouseButton1Click:Connect(function()
         Frame.Visible = false
