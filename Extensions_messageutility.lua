@@ -66,36 +66,37 @@ pcall(function()
     local Holder = Frame:Clone()
     Holder.Visible = true
     Holder.Parent = MFrame
-    Holder.Position = UDim2.new(0, 0, 0, 0)
+    Holder.Position = UDim2.new(0, math.floor(Frame.Size.X.Offset*2), 0, 0)
     
     local Image = PLabel:Clone()
     Image.Visible = true
     Image.Parent = Holder
-    Image.Position = UDim2.new(0, 0, 0, 0)
     
     local HeadLabel = PLabel:Clone()
     HeadLabel.Visible = true
     HeadLabel.Parent = Holder
-    HeadLabel.Position = UDim2.new(0, 0, 0, 0)
     HeadLabel.Text = Text
     
     local Label = ChatL_Name:Clone()
     Label.Visible = true
     Label.Parent = Holder
-    Label.Position = UDim2.new(0, 0, 0, 0)
     Label.Text = Text2
     
-    if not tonumber(Time) then
+    if not tonumber(Time) or Time < 3 then
       Time = 3
     end
-    
+
+    Holder:TweenPosition(UDim2.new(0, 0, 0, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Quart,0.5,true)
     spawn(function()
       wait(Time)
       for i, v in pairs(MFrame:GetChildren()) do
         if v ~= Frame then 
           v.Position = UDim2.new(0, 0, 0, 60*(#MFrame:GetChildren()-(i)))
+          Holder:TweenPosition(UDim2.new(0, math.floor(Holder.Size.X.Offset*2), 0, 60*(#MFrame:GetChildren()-(i))),Enum.EasingDirection.Out,Enum.EasingStyle.Quart,0.5,true)
         end
       end
+      wait(0.5)
+      Holder:Remove()
     end)
   end
 end)
