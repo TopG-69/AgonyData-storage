@@ -219,36 +219,6 @@ pcall(function()
                 rshdhrsdrhsdhrsdrhdsrhdsrhsdhdr
                 hdsrhsd
                 dshr
-                hsrd
-                hrdshsrd
-                hrds
-                shrd
-                hrds
-                shdr
-                rsdh
-                shdr
-                srdh
-                dhsr
-                dr
-                srdh
-                hrsd
-                hrds
-                hdrs
-                hdrs
-                shdr
-                shdr
-                
-                hsdr
-                hdrs
-                hrsd
-                hdrs
-                hdrs
-                hdrs
-                hsdr
-                hdr
-                h
-                d
-                hsdr
                 hsdr
                 shrd
                 hrd
