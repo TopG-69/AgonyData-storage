@@ -127,19 +127,17 @@ pcall(function()
     ChatL_Name.TextScaled = true
     ChatL_Name.Parent = ChatL_Label
     --)
+
     Display_ChatL = function(Boolean)
         Frame.Visible = Boolean
         Frame.Active = Boolean
         Frame.Selectable = Boolean
     end
-
     Create_ChatLNote = function(Text, Text2, ShouldLog)
         if not table.find(LogType, ShouldLog) then return end
-
         for i, v in pairs(ScrollingFrame:GetChildren()) do if (v ~= ChatL_Label and v ~= ChatL_Name) then
             v.Position = UDim2.new(0, 90, 0, 20*(#ScrollingFrame:GetChildren()-((i)-1)))
         end end
-
         local Label = ChatL_Label:Clone()
         Label.Visible = true
         Label.Parent = ScrollingFrame
@@ -152,7 +150,6 @@ pcall(function()
         Name.TextColor3 = Color3.fromRGB(math.random(60, 254), math.random(60, 254), math.random(60, 254))
         Name.Position = UDim2.new(0, 0, 0, 0)
         Name.Text = Text2
-
         spawn(function()
             for i, v in pairs(ScrollingFrame:GetChildren()) do
                 if (v ~= ChatL_Label and v ~= ChatL_Name) then 
@@ -212,4 +209,3 @@ pcall(function()
         Frame.Selectable = false
     end)
 end)
-
