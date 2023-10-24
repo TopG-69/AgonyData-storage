@@ -198,7 +198,7 @@ pcall(function()
         for _, Child in pairs(ScrollingFrame:GetChildren()) do
             if Child.Name ~= "ChatLog_Frame" then
                 local Message = Child.Text
-                local Name = nil for i, v in pairs(Child:GetChidlren()) do if not v.TextColor3 == Color3.fromRGB(255, 255, 255) then Name = v.Text end end
+                local Name = nil for i, v in pairs(Child:GetChildren()) do if not v.TextColor3 == Color3.fromRGB(255, 255, 255) then Name = v.Text end end
                 local Final = (Name .. ": " .. Message)
                 table.insert(ChatLogData, Final)
             end
