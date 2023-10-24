@@ -194,36 +194,6 @@ pcall(function()
             end
         end
     end)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
     ImageButton_save.MouseButton1Click:Connect(function()
         local ChatLogData = {}
         
