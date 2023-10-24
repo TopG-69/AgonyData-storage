@@ -13,7 +13,6 @@ pcall(function()
     D_Frame.Active = true
     D_Frame.Selectable = true
     D_Frame.Parent = Chatlog_GUI
-
     local Frame = Instance.new("Frame")
     Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
     Frame.BorderColor3 = Color3.fromRGB(60, 60, 255)
