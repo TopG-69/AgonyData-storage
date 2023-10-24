@@ -1,4 +1,3 @@
-
 pcall(function()
     local LogType = {"Group", "Global"}
     local Chatlog_GUI = Instance.new("ScreenGui")
