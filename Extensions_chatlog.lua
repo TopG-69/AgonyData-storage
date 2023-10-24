@@ -3,6 +3,7 @@ pcall(function()
     local Chatlog_GUI = Instance.new("ScreenGui")
     Chatlog_GUI.Name = "Agony_Extensions-CHATLOG"
     Chatlog_GUI.Parent = game:GetService("CoreGui")
+
     local D_Frame = Instance.new("Frame")
     D_Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
     D_Frame.Size = UDim2.new(0, 500, 0, 260)
@@ -80,6 +81,7 @@ pcall(function()
     ScrollingFrame.ScrollBarThickness = 5
     ScrollingFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
     ScrollingFrame.Parent = Frame
+
     local ChatL_Frame = Instance.new("Frame")
     ChatL_Frame.Name = "ChatLog_Frame"
     ChatL_Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -113,11 +115,13 @@ pcall(function()
     ChatL_Name.Visible = false
     ChatL_Name.TextScaled = true
     ChatL_Name.Parent = ChatL_Label
+
     Display_ChatL = function(Boolean)
         Frame.Visible = Boolean
         Frame.Active = Boolean
         Frame.Selectable = Boolean
     end
+
     Create_ChatLNote = function(Text, Text2, ShouldLog)
         if not table.find(LogType, ShouldLog) then return end
         for i, v in pairs(ScrollingFrame:GetChildren()) do if (v ~= ChatL_Label and v ~= ChatL_Name) then
