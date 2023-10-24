@@ -24,7 +24,6 @@ pcall(function()
     Frame.Active = false
     Frame.Selectable = false
     Frame.Parent = D_Frame
-
     local ImageButton_save = Instance.new("ImageButton")
     ImageButton_save.Size = UDim2.new(0, 25, 0, 25)
     ImageButton_save.Position = UDim2.new(1, -90, 0, 0)
@@ -33,7 +32,6 @@ pcall(function()
     ImageButton_save.Image = "rbxassetid://13241830406"
     ImageButton_save.ImageColor3 = Color3.fromRGB(120, 120, 255)
     ImageButton_save.Parent = Frame
-
     local ImageButton_clear = Instance.new("ImageButton")
     ImageButton_clear.Size = UDim2.new(0, 25, 0, 25)
     ImageButton_clear.Position = UDim2.new(1, -60, 0, 0)
@@ -42,7 +40,6 @@ pcall(function()
     ImageButton_clear.Image = "rbxassetid://12902061564"
     ImageButton_clear.ImageColor3 = Color3.fromRGB(120, 120, 255)
     ImageButton_clear.Parent = Frame
-
     local ImageButton_close = Instance.new("ImageButton")
     ImageButton_close.Size = UDim2.new(0, 25, 0, 25)
     ImageButton_close.Position = UDim2.new(1, -30, 0, 0)
@@ -51,7 +48,6 @@ pcall(function()
     ImageButton_close.Image = "rbxassetid://12942585305"
     ImageButton_close.ImageColor3 = Color3.fromRGB(120, 120, 255)
     ImageButton_close.Parent = Frame
-
     local ImageButton_global = Instance.new("ImageButton")
     ImageButton_global.Size = UDim2.new(0, 25, 0, 25)
     ImageButton_global.Position = UDim2.new(0.5, -42.5, 0, 0)
@@ -60,7 +56,6 @@ pcall(function()
     ImageButton_global.Image = "rbxassetid://14672671455"
     ImageButton_global.ImageColor3 = Color3.fromRGB(190, 190, 255)
     ImageButton_global.Parent = Frame
-
     local ImageButton_group = Instance.new("ImageButton")
     ImageButton_group.Size = UDim2.new(0, 25, 0, 25)
     ImageButton_group.Position = UDim2.new(0.5, -12.5, 0, 0)
@@ -69,7 +64,6 @@ pcall(function()
     ImageButton_group.Image = "rbxassetid://12899886897"
     ImageButton_group.ImageColor3 = Color3.fromRGB(190, 190, 255)
     ImageButton_group.Parent = Frame
-
     local ImageButton_none = Instance.new("ImageButton")
     ImageButton_none.Size = UDim2.new(0, 25, 0, 25)
     ImageButton_none.Position = UDim2.new(0.5, 17.5, 0, 0)
@@ -78,7 +72,6 @@ pcall(function()
     ImageButton_none.Image = "rbxassetid://14672679300"
     ImageButton_none.ImageColor3 = Color3.fromRGB(70, 70, 200)
     ImageButton_none.Parent = Frame
-
     local ScrollingFrame = Instance.new("ScrollingFrame")
     ScrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
     ScrollingFrame.BackgroundTransparency = 0.2
@@ -99,7 +92,6 @@ pcall(function()
     ChatL_Frame.Position = UDim2.new(0, 0, 0, 0)
     ChatL_Frame.Size = UDim2.new(1, 0, 0, 20)
     ChatL_Frame.Parent = ScrollingFrame
-
     local ChatL_Label = Instance.new("TextLabel")
     ChatL_Label.Name = "ChatLog_Label"
     ChatL_Label.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
@@ -112,7 +104,6 @@ pcall(function()
     ChatL_Label.Visible = false
     ChatL_Label.TextScaled = true
     ChatL_Label.Parent = ChatL_Frame
-
     local ChatL_Name = Instance.new("TextLabel")
     ChatL_Name.Name = "ChatLog_Name"
     ChatL_Name.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
