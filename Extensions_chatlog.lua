@@ -13,6 +13,7 @@ pcall(function()
     D_Frame.Active = true
     D_Frame.Selectable = true
     D_Frame.Parent = Chatlog_GUI
+
     local Frame = Instance.new("Frame")
     Frame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
     Frame.BorderColor3 = Color3.fromRGB(60, 60, 255)
@@ -23,6 +24,7 @@ pcall(function()
     Frame.Active = false
     Frame.Selectable = false
     Frame.Parent = D_Frame
+
     local ImageButton_save = Instance.new("ImageButton")
     ImageButton_save.Size = UDim2.new(0, 25, 0, 25)
     ImageButton_save.Position = UDim2.new(1, -90, 0, 0)
@@ -90,6 +92,7 @@ pcall(function()
     ChatL_Frame.Position = UDim2.new(0, 0, 0, 0)
     ChatL_Frame.Size = UDim2.new(1, 0, 0, 20)
     ChatL_Frame.Parent = ScrollingFrame
+
     local ChatL_Label = Instance.new("TextLabel")
     ChatL_Label.Name = "ChatLog_Label"
     ChatL_Label.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
@@ -192,6 +195,7 @@ pcall(function()
         makefolder("Agony/Apoc/ChatLogs") task.wait(0.1)
         writefile("Agony/Apoc/ChatLogs/" .. tostring(os.time()) .. ".txt", NewChatLogData)
     end)
+
     ImageButton_close.MouseButton1Click:Connect(function()
         Frame.Visible = false
         Frame.Active = false
