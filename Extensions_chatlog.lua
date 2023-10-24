@@ -205,20 +205,6 @@ pcall(function()
         end
         --[[
             angiounjgaw
-                fdhdshfds
-                dsrhrdhdrh
-                fsdhdshfdshs
-                drshsdhsdhrd
-                sshd
-                hsrd
-                h
-                dshsd
-                gfjdjfgjjgdfjgfjgfdjgdf
-                jgfddjgfjtfdjjtfjftdjtfd
-                jtdfahjrdrhjddssrhdrh
-                rshdhrsdrhsdhrsdrhdsrhdsrhsdhdr
-                hdsrhsd
-                dshr
                 hsdr
                 shrd
                 hrd
