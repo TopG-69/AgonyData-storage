@@ -149,7 +149,7 @@ pcall(function()
         local Name = ChatL_Name:Clone()
         Name.Visible = true
         Name.Parent = Label
-        Name.TextColor3 = Color3.fromRGB(math.random(60, 200), math.random(60, 200), math.random(60, 200))
+        Name.TextColor3 = Color3.fromRGB(math.random(60, 254), math.random(60, 254), math.random(60, 254))
         Name.Position = UDim2.new(0, 0, 0, 0)
         Name.Text = Text2
 
@@ -198,7 +198,7 @@ pcall(function()
         for _, Child in pairs(ScrollingFrame:GetChildren()) do
             if Child.Name ~= "ChatLog_Frame" then
                 local Message = Child.Text
-                local Name = Child.ChatLog_Name.Text
+                local Name = nil for i, v in pairs(Child:GetChidlren()) do if not v.TextColor3 == Color3.fromRGB(255, 255, 255) then Name = v.Text end
                 local Final = (Name .. ": " .. Message)
                 table.insert(ChatLogData, Final)
             end
