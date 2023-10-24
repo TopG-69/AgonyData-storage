@@ -192,6 +192,7 @@ pcall(function()
             end
         end
     end)
+    --Idk Some random text xd
     ImageButton_save.MouseButton1Click:Connect(function()
         local ChatLogData = {}
         
