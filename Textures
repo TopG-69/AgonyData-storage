@@ -1,0 +1,14 @@
+TextureList = {
+    ["Smooth Plastic"] = 1,
+    ["Diamond Plate"] = 2,
+    ["Marble"] = 3,
+    ["Pebble"] = 4,
+    ["Corroded Metal"] = 5,
+    ["Sand"] = 6,
+    ["Slate"] = 7,
+    ["Granite"] = 8,
+    ["Foil"] = 9,
+    ["Grass"] = 10,
+    ["Ice"] = 11,
+    ["Metal"] = 12,
+}
