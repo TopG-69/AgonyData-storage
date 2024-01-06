@@ -167,7 +167,6 @@ pcall(function()
     ImageButton_global.MouseButton1Click:Connect(function()
         if ImageButton_global.ImageColor3 == Color3.fromRGB(190, 190, 255) then
             for i, v in pairs(LogType) do if v.Name == "Global" then table.remove(LogType, i) break end end
-            for i, v in pairs(LogType) do table.remove(LogType, i) end
             ImageButton_global.ImageColor3 = Color3.fromRGB(120, 120, 255)
         else
             table.insert(LogType, "Global")
